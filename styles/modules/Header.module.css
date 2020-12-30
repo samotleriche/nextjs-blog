@@ -1,0 +1,16 @@
+.headerContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding-left: 2rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.profileImage {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 2.5rem;
+}
