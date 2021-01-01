@@ -1,16 +1,44 @@
 .headerContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(228, 228, 228);
-  padding-left: 2rem;
-  height: 6rem;
+  background-color: var(--color-gray-light);
+  padding: 1rem 2rem;
   margin-bottom: 1rem;
+  border-radius: 0 0 2rem 2rem;
 }
 
 .profileImage {
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 10rem;
   background-color: white;
-  border-radius: 2.5rem;
+  border-radius: 5rem;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+.profile {
+  position: relative;
+  height: 200px;
+  object-fit: contain;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.headerTitleName {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.titleList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
 }
