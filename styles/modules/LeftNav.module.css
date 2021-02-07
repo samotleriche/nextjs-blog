@@ -1,0 +1,24 @@
+.navListItems {
+  padding: 1rem;
+  font-weight: 600;
+  vertical-align: middle;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  transition: all 0.15s;
+}
+
+.navListItems:hover {
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 3px grey;
+}
+
+.navListItems:hover .icons {
+  font-size: 2.2rem;
+}
+
+.icons {
+  vertical-align: middle;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: all 0.15s;
+}

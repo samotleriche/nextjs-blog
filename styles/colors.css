@@ -1,5 +1,6 @@
 :root {
   --color-green: #84c446;
   --color-blue: #073544;
+  --color-gray: hsl(0, 0%, 89%);
   --color-gray-light: hsl(40, 12%, 95%);
 }

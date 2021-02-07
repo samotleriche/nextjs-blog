@@ -11,10 +11,22 @@
   padding: 1rem;
   background-color: var(--color-gray-light);
   border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgb(97, 97, 97);
+  transition: all 0.25s;
+}
+
+.leftNav:hover {
+  box-shadow: 1px 1px 2px rgb(97, 97, 97);
 }
 
 .rightNav {
   padding: 1rem;
   background-color: var(--color-gray-light);
   border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgb(97, 97, 97);
+  transition: all 0.25s;
+}
+
+.rightNav:hover {
+  box-shadow: 1px 1px 2px rgb(97, 97, 97);
 }

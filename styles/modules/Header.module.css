@@ -7,6 +7,12 @@
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   border-radius: 0 0 2rem 2rem;
+  transition: all 0.25s;
+  box-shadow: 3px 3px 10px rgb(97, 97, 97);
+}
+
+.headerContainer:hover {
+  box-shadow: 1px 1px 2px rgb(97, 97, 97);
 }
 
 .profileImage {
@@ -21,6 +27,7 @@
 .profile {
   position: relative;
   height: 200px;
+  margin-left: -1rem;
   object-fit: contain;
 }
 
