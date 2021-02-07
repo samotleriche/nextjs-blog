@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+//import Link from 'next/link';
 
 import styles from '../styles/modules/LeftNav.module.css';
 
@@ -7,7 +7,6 @@ import {
   IoLogoGithub,
   IoLogoMedium,
   IoLogoLinkedin,
-  IoLogoFacebook,
   IoLogoInstagram,
 } from 'react-icons/io5';
 

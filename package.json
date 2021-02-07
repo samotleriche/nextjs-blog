@@ -5,12 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier:fix": "prettier --check \"{pages,components}/**/*.{js,html,jsx}\" --write",
+    "lint": "eslint \"{components,pages}/**/*.{js,jsx}\" --quiet"
   },
   "dependencies": {
     "next": "10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1"
   }
 }
