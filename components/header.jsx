@@ -6,11 +6,7 @@ const Header = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.profileImage}>
-        <img
-          src="/profile.jpg"
-          alt="picture of me"
-          className={styles.profile}
-        />
+        <img src="/profile.jpg" alt="me" className={styles.profile} />
       </div>
       <div className={styles.headerText}>
         <h2 className={styles.headerTitleName}>Tomas Leriche</h2>

@@ -6,9 +6,7 @@ const FeedArea = () => {
   return (
     <>
       <article>
-        <a href="https://medium.com/better-programming/you-need-server-side-rendering-for-your-angular-react-vue-application-c99e55199aa5">
-          link
-        </a>
+        <h1>hello</h1>
       </article>
     </>
   );
