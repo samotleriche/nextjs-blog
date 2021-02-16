@@ -11,7 +11,9 @@ const Header = () => {
       <div className={styles.headerText}>
         <h2 className={styles.headerTitleName}>Tomas Leriche</h2>
         <div className={styles.titleList}>
-          <h4>Full Stack Engineer</h4>|<h4>Instructor</h4>|<h4>Tutor</h4>
+          <h4>Full Stack Engineer</h4>
+          <h4>Instructor</h4>
+          <h4>Tutor</h4>
         </div>
       </div>
     </header>

@@ -5,7 +5,7 @@ const Post = () => {
   return (
     <>
       <Head>hello</Head>
-      <div>Hello</div>
+      <div>This is an article</div>
     </>
   );
 };

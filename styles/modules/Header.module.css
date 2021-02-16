@@ -1,19 +1,17 @@
 .headerContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: var(--color-green);
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  border-radius: 0 0 2rem 2rem;
-  transition: all 0.25s;
-  box-shadow: 3px 3px 10px rgb(97, 97, 97);
+  background-color: var(--color-orange);
+  color: black;
+  box-shadow: 1px 1px 2px rgb(97, 97, 97);
+  /* transition: all 0.25s; */
 }
 
-.headerContainer:hover {
+/* .headerContainer:hover {
   box-shadow: 1px 1px 2px rgb(97, 97, 97);
-}
+} */
 
 .profileImage {
   width: 10rem;
@@ -32,19 +30,18 @@
 }
 
 .headerText {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
 }
 
 .headerTitleName {
   margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding-left: 0.5rem;
+  margin-top: -2rem;
 }
 
 .titleList {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: space-evenly;

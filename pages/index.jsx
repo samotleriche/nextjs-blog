@@ -1,28 +1,45 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Header from '../components/header';
-import LeftNav from '../components/leftNav';
 import FeedArea from '../components/feedArea';
-import ContentLink from '../components/contentLinks';
 
-export default function Home() {
+export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Tomas Leriche: Software</title>
+        <title>Tomas Leriche: Software!!!</title>
+        <meta
+          name="keywords"
+          content="Software Engineer, Web Development, Blog"
+        />
+        <meta
+          name="description"
+          content="web developemet website leriche media"
+        />
       </Head>
-      <Header />
-      <div className={styles.homeGrid}>
-        <nav className={styles.leftNav}>
-          <LeftNav />
-        </nav>
-        <section className={styles.rightNav}>
-          <FeedArea />
-        </section>
-        <aside className={styles.contentLink}>
-          <ContentLink />
-        </aside>
-      </div>
+      <FeedArea articles={articles} />
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  try {
+    const res = await fetch(
+      `https://jsonplaceholder.typicode.com/posts?_limit=6`,
+    );
+
+    const articles = await res.json();
+
+    return {
+      props: {
+        articles,
+      },
+    };
+  } catch (err) {
+    console.log(err);
+
+    return {
+      props: {
+        articles: [],
+      },
+    };
+  }
+};

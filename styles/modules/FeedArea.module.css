@@ -1,0 +1,38 @@
+.itemsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemsList > * {
+  padding: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--color-orange);
+  transform: translateX();
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.itemsList > * header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemsList > * h1 {
+  font-size: 1.25rem;
+  display: inline-block;
+}
+
+.itemsList > * time {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.itemsList > *:hover {
+  background-color: rgb(204, 204, 204);
+  transform: translateX(1rem);
+}
